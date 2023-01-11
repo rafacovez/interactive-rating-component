@@ -67,12 +67,18 @@ img, picture, svg, video, object {
     border: 0;
 }
 
+main {
+    display: grid;
+    place-items: center;
+}
+
 .modal {
     background-color: var(--dark-blue);
     color: var(--white);
+    max-width: 350px;
     padding: 1.5rem;
     margin: 2rem;
-    border-radius: 8px;
+    border-radius: 16px;
 }
 
 .modal__heading {
@@ -98,6 +104,7 @@ img, picture, svg, video, object {
     font-weight: var(--font-bold);
     text-transform: uppercase;
     letter-spacing: 2px;
+    cursor: pointer;
 }
 
 .rate-wrapper {

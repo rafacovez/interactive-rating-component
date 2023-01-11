@@ -20,6 +20,9 @@ html {
 }
 
 body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
     background-color: var(--very-dark-blue);
     font-family: var(--font-family);
     font-size: var(--font-size);
@@ -105,12 +108,27 @@ main {
     text-transform: uppercase;
     letter-spacing: 2px;
     cursor: pointer;
+    transition: all .2s ease-out;
+}
+
+.modal__button:hover {
+    background-color: var(--white);
+    color: var(--orange);
 }
 
 .rate-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 1.5rem 0;
+}
+
+.rate-wrapper__rate {
+    cursor: pointer;
+    transition: all .1s ease-out;
+}
+
+.rate-wrapper__rate:hover {
+    background-color: var(--orange);
 }
 
 .circle {
@@ -119,7 +137,6 @@ main {
     place-items: center;
     width: 40px;
     height: 40px;
-    margin: 0 0 1.5rem 0;
     border-radius: 50%;
     font-weight: var(--font-regular);
     box-shadow: 2px 2px 8px rgba(0, 0, 0 , 0.2);

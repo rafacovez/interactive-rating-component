@@ -7,6 +7,7 @@
     --white: hsl(0, 0%, 100%);
     --light-grey: hsl(217, 12%, 63%);
     --medium-grey: hsl(216, 12%, 54%);
+    --slightly-dark-blue: hsl(214, 24%, 23%);
     --dark-blue: hsl(213, 19%, 18%);
     --very-dark-blue: hsl(216, 12%, 8%);
 }
@@ -133,6 +134,31 @@ main {
 
 .rate-wrapper__rate:hover {
     background-color: var(--orange);
+}
+
+.submit-modal {
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.submit-modal__rate-submitted {
+    font-weight: var(--font-regular);
+    color: var(--orange);
+    background-color: var(--slightly-dark-blue);
+    padding: .5rem 1rem;
+    width: fit-content;
+    border-radius: 32px;
+}
+
+.submit-modal__heading {
+    font-weight: var(--font-bold);
+}
+
+.submit-modal__paragraph {
+    font-size: calc(var(--font-size) * 0.8);
+    font-weight: var(--font-regular);
+    color: var(--light-grey);
 }
 
 .circle {

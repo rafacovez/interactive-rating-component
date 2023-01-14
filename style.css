@@ -34,14 +34,14 @@ body {
 h1, h2, h3, h4, h5 {
     font-weight: var(--font-bold);
     line-height: calc(var(--font-size) * 1);
-    margin: 1rem 0;
+    margin: 0;
     padding: 0;
 }
 
 p {
     font-weight: var(--font-regular);
     line-height: calc(var(--font-size) * 1.6);
-    margin: 1rem 0;
+    margin: 0;
     padding: 0;
 }
 
@@ -77,16 +77,15 @@ main {
 }
 
 .modal {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
     background-color: var(--dark-blue);
     color: var(--white);
     max-width: 350px;
     padding: 1.5rem;
     margin: 2rem;
     border-radius: 16px;
-}
-
-.modal__icon-wrapper {
-    margin-bottom: 2rem;
 }
 
 .modal__heading {
@@ -124,7 +123,6 @@ main {
 .rate-wrapper {
     display: flex;
     justify-content: space-between;
-    margin: 2rem 0;
 }
 
 .rate-wrapper__rate {
@@ -140,15 +138,17 @@ main {
     display: grid;
     place-items: center;
     text-align: center;
+    gap: 1.5rem;
 }
 
 .submit-modal__rate-submitted {
     font-weight: var(--font-regular);
     color: var(--orange);
     background-color: var(--slightly-dark-blue);
-    padding: .5rem 1rem;
+    padding: .2rem .8rem;
     width: fit-content;
     border-radius: 32px;
+    opacity: 0.8;
 }
 
 .submit-modal__heading {

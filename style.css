@@ -131,6 +131,7 @@ main {
 
 .rate-wrapper__rate:hover {
     background-color: var(--orange);
+    color: var(--white);
 }
 
 .submit-modal {
@@ -138,6 +139,10 @@ main {
     place-items: center;
     text-align: center;
     gap: 1.5rem;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s ease-out;
 }
 
 .submit-modal__rate-submitted {

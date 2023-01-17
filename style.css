@@ -187,3 +187,17 @@ main {
     font-weight: var(--font-regular);
     color: var(--light-grey);
 }
+
+.attribution {
+    text-align: center;
+    padding: 0 2rem;
+    color: var(--light-grey);
+}
+
+.attribution > p > a {
+    color: var(--orange);
+}
+
+.attribution > p > a:hover {
+    text-decoration: none;
+}

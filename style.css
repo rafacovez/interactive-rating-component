@@ -93,7 +93,7 @@ main {
     gap: 1.5rem;
     background-color: var(--dark-blue);
     color: var(--white);
-    width: 300px;
+    min-width: 300px;
     max-width: 350px;
     padding: 1.5rem;
     margin: 2rem;

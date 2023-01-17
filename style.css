@@ -70,6 +70,18 @@ img, picture, svg, video, object {
     border: 0;
 }
 
+.circle {
+    background-color: var(--medium-grey);
+    color: var(--light-grey);
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-weight: var(--font-regular);
+    box-shadow: 2px 2px 16px rgba(0, 0, 0 , 0.1);
+}
+
 main {
     display: grid;
     place-items: center;
@@ -124,13 +136,22 @@ main {
     justify-content: space-between;
 }
 
-.rate-wrapper__rate {
+.rate-wrapper > input {
+    display: none;
+}
+
+.rate-wrapper > label {
     cursor: pointer;
     transition: all .1s ease-out;
 }
 
-.rate-wrapper__rate:hover {
+.rate-wrapper > label:hover {
     background-color: var(--orange);
+    color: var(--white);
+}
+
+.rate-wrapper > input:checked + label {
+    background-color: var(--light-grey);
     color: var(--white);
 }
 
@@ -163,16 +184,4 @@ main {
     font-size: calc(var(--font-size) * 0.8);
     font-weight: var(--font-regular);
     color: var(--light-grey);
-}
-
-.circle {
-    background-color: var(--medium-grey);
-    color: var(--light-grey);
-    display: grid;
-    place-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    font-weight: var(--font-regular);
-    box-shadow: 2px 2px 16px rgba(0, 0, 0 , 0.1);
 }
